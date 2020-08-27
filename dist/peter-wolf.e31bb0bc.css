@@ -1,0 +1,104 @@
+body {
+    background-color: #F3E2CF;
+    font-family: 'Alata', sans-serif;
+}
+
+/* Page header */
+
+.page-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+    grid-template-areas: 
+        "lo ti ro";
+}
+
+.header-image {
+    max-width: 100%;
+    height: auto;
+}
+
+#left-overlay {
+    grid-area: lo;
+}
+
+#right-overlay {
+    grid-area: ro;
+}
+
+.title {
+    grid-area: ti;
+    font-size: 75px;
+    text-align: center;
+    /* font-family: 'Homemade Apple', cursive; */
+    font-family: 'Princess Sofia', cursive;
+    color: #AB7F50;
+}
+
+/* Grid layout */
+
+#picset {
+    /* background-color: #F3E2CF; */
+    /* background-color: #BAB1C2; */
+    /* background-color: #30493B; */
+    padding: 5px 20px;
+    margin: 0px 50px;
+    border-radius: 15px;
+}
+
+.pic-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 1%;
+    align-items: center;
+    margin: 15px;
+}
+
+/* Individual images */
+
+.pic-container {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: bold;
+    color: ivory;
+    background-color: #212121;
+    margin: 0px 4px;
+}
+
+.pic-container:hover .overlay {
+    opacity: 1;
+}
+
+.with-sound:hover {
+    cursor: pointer;
+}
+
+.without-sound:hover {
+    cursor: default;
+}
+
+
+/*# sourceMappingURL=/peter-wolf.e31bb0bc.css.map */
